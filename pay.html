@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>17Club - Payment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-box">
+    <h2>📥 Add Balance</h2>
+    <p>Scan this QR code to make payment:</p>
+    <img src="https://i.ibb.co/XFGtWcp/qr-demo.png" alt="QR Code" width="250" />
+    <form id="paymentForm">
+      <input type="number" id="amount" placeholder="Enter Amount (₹)" required />
+      <input type="file" id="screenshot" accept="image/*" />
+      <button type="submit">Submit Payment</button>
+    </form>
+    <p>After submitting, please wait for admin approval.</p>
+    <a href="games.html">⬅ Back to Games</a>
+  </div>
+  <script>
+    document.getElementById('paymentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Payment submitted! Wait for admin approval.');
+      window.location.href = 'games.html';
+    });
+  </script>
+</body>
+</html>
