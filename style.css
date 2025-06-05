@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  width: 100%;
+  background: #e65100;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+.pay-link {
+  display: inline-block;
+  background: #fff;
+  color: #e65100;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.form-box {
+  background: #222;
+  margin-top: 60px;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 0 20px #e65100;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #e65100;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #bf360c;
+}
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  margin: 30px;
+  width: 90%;
+}
+.game-card {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 0 8px #000;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.game-card:hover {
+  transform: scale(1.05);
+  background: #e65100;
+  color: #fff;
+}
